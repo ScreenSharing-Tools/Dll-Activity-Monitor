@@ -1,21 +1,48 @@
 # DLL Activity Monitor @Sleepy 2026
-- Not Full Sourced Yet
 
-A lightweight Windows desktop tool for monitoring DLL module activity in real time.
+> Source code is not fully public yet.
 
-DLL Activity Monitor lets you attach to a running process using its PID, view currently loaded modules, detect newly loaded DLLs while monitoring, and maintain a timestamped activity timeline — all inside a clean, minimal UI.
+A lightweight Windows desktop application for monitoring DLL/module activity in real time.
 
-### Features
+DLL Activity Monitor allows you to attach to a running process using its PID, inspect loaded modules, track newly loaded DLLs during runtime, and maintain a persistent activity timeline — all inside a clean and responsive interface.
+
+Designed for diagnostics, visibility, and runtime analysis using documented Windows APIs.
+
+## Features
+
+### Monitoring
 
 * 🔍 Attach to any running process by PID
-* 📦 View loaded DLL modules and file paths
-* ⏱️ Real-time module activity timeline
-* 🆕 Detect newly loaded modules while monitoring
-* 📁 Export existing DLL files from disk
-* 🔎 Search and filter loaded modules
-* 🌙 Clean modern dark UI
+* 📦 View loaded DLL modules and full file paths
+* 🆕 Detect newly loaded modules in real time
+* ⏱️ Live **Visible For** tracking
+* 📈 Activity timeline with timestamps
+* 🔄 Persistent monitoring sessions
+* 🎯 Optional auto attach for Minecraft
 
-### Built With
+### Analysis
+
+* 🔎 Search and filter modules
+* 🧾 View module signer / digital signature
+* 🔐 Generate SHA256 hashes
+* ⚠️ Module risk scoring
+* 🚫 Ignore Windows/System DLLs
+* 📊 Activity graphs and statistics
+
+### Export
+
+* 📁 Export discovered DLL files from disk
+* 💾 Save monitoring sessions
+* 📄 Export session history and module data
+
+### UI
+
+* 🌙 Clean modern dark interface
+* ⚡ Fast refresh without resetting data
+* 📌 Persistent module timestamps
+* 🧭 Organized tabs and live status indicators
+
+## Built With
 
 * C++17
 * ImGui
@@ -23,11 +50,21 @@ DLL Activity Monitor lets you attach to a running process using its PID, view cu
 * Windows ToolHelp API
 * std::filesystem
 
-### Use Cases
+## Use Cases
 
 * Software debugging
 * Module inspection
-* Reverse engineering learning
-* Development and diagnostics
+* Runtime diagnostics
+* Development workflows
+* Learning and experimentation
 
-> Built for visibility and analysis of module activity using documented Windows APIs.
+## Notes
+
+* Uses documented Windows APIs
+* Designed for monitoring and diagnostics
+* No process modification
+* No memory dumping
+
+---
+
+Built by @Sleepy
